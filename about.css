@@ -1,0 +1,415 @@
+body{
+    margin: 0;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+body, html{
+    scroll-behavior: smooth;
+}
+
+#logo {
+	width: 3em;
+	height: 3em;
+	float: left;
+	margin: .25em 1em;
+	border-radius: 10px;
+}
+
+#nav {
+	background-color: transparent;
+	font-family: "century gothic";
+	width: 75em;
+	height: 3.5em;
+	border-radius: 10px;
+	margin: 1em auto;
+	
+}
+
+#nav ul {
+	padding: 0;
+	float: left;
+	margin: .15em 18.5em;
+	list-style-type: none;
+	width: 30em;
+}
+
+#nav li {
+	display: inline;
+	float: left;
+}
+
+#nav li a {
+	display: block;
+	text-align: center;
+	padding: 1em 1em;
+	text-decoration: none;
+	transition: transform .7s ease;
+	color: white;
+	border: .2px solid white;
+	border-radius: 10px;
+	margin: 0 .5em 0 0;
+	transition: transform .2s ease-out;
+}
+
+#nav a:hover {
+	background-color: #cc6810;
+	transform: scale(1.05);
+}
+
+.searchbar{
+    width: 13em;
+	height: 2.6em;
+    border-radius: 10px;
+    background: grey;
+    opacity: .5;
+	float: right;
+	margin: -2.9em 1em 0 0;
+}
+
+.searchbar input{
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 7px 5px;
+    font-size: 1em;
+	font-family: "century gothic";
+    color: white;
+}
+
+::placeholder{
+    color: white;
+	margin: 0;
+	position: absolute;
+	top: 60%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+
+}
+
+/* Jumbotron 1 */
+
+.gridcontainer{
+    display: grid;
+    grid-template-columns: 600px auto;
+    grid-template-rows: auto;
+    margin: auto;
+    grid-gap: 25px;
+    align-items: stretch;
+
+    /* background: rgba(114, 186, 94, 0.05);
+    border: 2px dashed rgba(114, 186, 94, 0.35); */
+
+    box-sizing: border-box;
+    width: 70em;
+    height: fit-content;
+    margin-top: 70px;
+    margin-bottom: 73px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cell1, .cell2{
+    padding: 20px;
+}
+
+.cell1 h1{
+    color: white;
+    font-family: 'Futura Md BT';
+    font-size: 100px;
+}
+
+.cell1 p{
+    font-family: 'Century Gothic';
+    color: white;
+    font-size: 16px;
+    margin-top: -50px;
+}
+
+.headbtn .button{
+    background-color: black; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.gridcontainer .headbtn .button1:hover{
+    background-color: #cc6810;
+    color: white;
+    /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
+}
+
+.gridcontainer .headbtn .button1{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.cell2{
+    grid-row: span 2;
+}
+
+.cell2 img{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 25px;
+    /* box-shadow: 0 6px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
+}
+
+/* Body Section 2 */
+
+.container1{
+    background-color: white;
+    height: fit-content;
+}
+
+.gridcontainer2{
+    display: grid;
+    grid-template-columns: auto 600px;
+    grid-template-rows: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    grid-gap: 25px;
+    align-items: stretch;
+    /* background-color: #555555; */
+
+    /* background: rgba(114, 186, 94, 0.05);
+    border: 2px dashed rgba(114, 186, 94, 0.35); */
+
+    box-sizing: border-box;
+    width: 70em;
+    height: fit-content;
+    margin: 30px auto auto;
+    justify-content: space-evenly;
+}
+
+.content1, .content2{
+    padding: 20px;
+}
+
+.content2 h1{
+    color: black;
+    font-family: 'Futura Md BT';
+    font-size: 60px;
+}
+
+.content2 p{
+    font-family: 'Century Gothic';
+    font-size: 18px;
+    margin-top: -10px;
+    color: black;
+}
+
+.gridcontainer2 .headbtn .button{
+    background-color: #555555; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.gridcontainer2 .headbtn .button2:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.gridcontainer2 .headbtn .button2{
+    background-color: #555555;
+    color: white;
+    border: 2px solid white;
+}
+
+.content1{
+    grid-row: span 2;
+}
+
+.content1 img{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 25px;
+    /* box-shadow: 0 6px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
+}
+
+/* Body Section 3 */
+
+.container2{
+    background-color: black;
+    height: fit-content;
+    margin-top: -30px;
+}
+
+.gridcontainer3{
+    display: grid;
+    grid-template-columns: 600px auto;
+    grid-template-rows: auto;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    grid-gap: 25px;
+    align-items: stretch;
+    /* background-color: #555555; */
+
+    /* background: rgba(114, 186, 94, 0.05);
+    border: 2px dashed rgba(114, 186, 94, 0.35); */
+
+    box-sizing: border-box;
+    width: 70em;
+    height: fit-content;
+    margin: 30px auto auto;
+    justify-content: space-evenly;
+}
+
+.gridcontainer3 .content1, .content2{
+    padding: 20px;
+}
+
+.gridcontainer3 .content1 h1{
+    color: white;
+    font-family: 'Futura Md BT';
+    font-size: 60px;
+    text-align: right;
+}
+
+.gridcontainer3 .content1 p{
+    font-family: 'Century Gothic';
+    font-size: 18px;
+    margin-top: -10px;
+    color: white;
+    text-align: right;
+}
+
+.gridcontainer3 .headbtn .button{
+    background-color: white; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.gridcontainer3 .headbtn .button3:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.gridcontainer3 .headbtn .button3{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.gridcontainer3 .content2{
+    grid-row: span 2;
+}
+
+.gridcontainer3 .content2 img{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 25px;
+    box-shadow: 0 6px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* Dev Section */
+
+.devsec{
+    background-color: white;
+    height: fit-content;
+}
+
+.gridcontainer4{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    /* margin: auto; */
+    grid-gap: 25px;
+    align-items: center;
+    /* background-color: #555555; */
+
+    /* background: rgba(114, 186, 94, 0.05);
+    border: 2px dashed rgba(114, 186, 94, 0.35); */
+
+    box-sizing: border-box;
+    width: 70em;
+    height: auto;
+    margin: auto;
+    padding: 15px;
+    justify-content: space-around;
+}
+
+.devdeets{
+    font-family: 'Poppins';
+    color: black;
+}
+
+.gridcontainer4 .button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.gridcontainer4 .linkdev .btndev:hover{
+    background-color: black;
+    color: white;
+    /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
+}
+
+.gridcontainer4 .linkdev .btndev{
+    background-color: white;
+    color: #cc6810;
+    font-family: Poppins;
+    border: 2.5px solid #cc6810;
+    border-radius: 10px;
+}
+
+.planet{
+    position: absolute;
+    /* float: right; */
+    right: 110px;
+    top: 70px;
+    z-index: -90;
+}
+
+.planet2{
+    position: absolute;
+    /* float: right; */
+    right: 380px;
+    top: 300px;
+    z-index: -99;
+}
+
+.planet img{
+    width: 500px;
+}
+
+.planet2 img{
+    width: 350px;
+}

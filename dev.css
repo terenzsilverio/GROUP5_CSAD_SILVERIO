@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+.back{
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    z-index: 9;
+    transition: 0.6s;
+}
+
+.back img{
+    width: 70px;
+}
+
+.back:hover{
+    transform: translateX(-10px);
+}
+
+.opener{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    position: absolute;
+    right: 16px;
+    top: 30px;
+    font-size: 30px;
+    width: 100%;
+    height: 90vh;
+    color: white
+}
+  
+.main{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+  
+.profile-card{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: black;
+    padding: 30px;
+    border-radius: 50%;
+    /* box-shadow: 0 0 22px #3336; */
+    transition: .6s;
+    margin: 0 25px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+#merc{
+    background-image: url(images/Mercury.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .95;
+}
+
+#ven{
+    background-image: url(images/Venus.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .95;
+}
+
+#mars{
+    background-image: url(images/Mars.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .95;
+}
+
+#earth{
+    background-image: url(images/Earth.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .95;
+}
+
+#jup{
+    background-image: url(images/Jupiter.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .95;
+}
+
+#nep{
+    background-image: url(images/Neptune.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .95;
+}
+  
+.profile-card:hover{
+    border-radius: 10px;
+    height: 265px;
+}
+  
+.profile-card .img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+    z-index: 99;
+}
+  
+.profile-card:hover .img{
+    transform: translateY(-65px);
+}
+  
+.img img{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+}
+
+.profile-card:hover img{
+    border-radius: 10px;
+}
+  
+.caption{
+    text-align: center;
+    transform: translateY(-82px);
+    opacity: 0;
+    transition: .6s;
+}
+  
+.profile-card:hover .caption{
+    opacity: 1;
+}
+  
+.caption h3{
+    font-size: 21px;
+    color: white;
+}
+
+.caption p{
+    font-size: 16px;
+    color: white;
+    margin: 2px 0 9px 0;
+}
+
+/*   
+caption .social-links a{
+    color: #333;
+    margin-right: 8px;
+    font-size: 21px;
+    transition: .6s;
+} */
+
+.fa-facebook {
+    color: white;
+    margin-right: 3px;
+    font-size: 21px;
+    transition: .6s;
+}
+
+.fa-instagram {
+    color: white;
+    margin-right: 3px;
+    font-size: 21px;
+    transition: .6s;
+}
+
+.fa-twitter {
+    color: white;
+    margin-right: 3px;
+    font-size: 21px;
+    transition: .6s;
+}
+  
+.social-links .fa-facebook:hover{
+    color: #3b5998;
+}
+
+.social-links .fa-instagram:hover{
+    color: #FD1D1D;
+}
+
+.social-links .fa-twitter:hover{
+    color:  #00acee;
+}
